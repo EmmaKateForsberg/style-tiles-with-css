@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: immortal;
-  src: url(../css/immortal);
+  src: url(../fonts/immortal);
 }
 @font-face {
-  font-family: immortal;
-  src: url(../css/monserrat);
+  font-family: montserrat;
+  src: url(../fonts/montserrat);
 }
 
 @font-face {
-  font-family: immortal;
-  src: url(../css/exo);
+  font-family: exo;
+  src: url(../fonts/exo/);
 }
 * {
   box-sizing: border-box;
@@ -30,7 +30,7 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-5: #005244;
 
   --primary-font: "immortal", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --secondary-font: "montserrat", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
