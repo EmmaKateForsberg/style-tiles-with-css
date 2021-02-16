@@ -2,11 +2,19 @@
 
 @font-face {
   font-family: immortal;
-  src: url(css/immortal);
+  src: url(../css/immortal);
+}
+@font-face {
+  font-family: immortal;
+  src: url(../css/monserrat);
+}
+
+@font-face {
+  font-family: immortal;
+  src: url(../css/exo);
 }
 * {
   box-sizing: border-box;
-  margin-top: 8px;
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -16,8 +24,8 @@ use the fonts in other ways in the font hierarchy etc. */
 /* change these */
 :root {
   --bg-color: #462c6e;
-  --link-color: #bd95ff;
-  --link-hover-color: #66baa8;
+  --link-color: #8574a3;
+  --link-hover-color: #c2a72f;
   --color-4: #8b9199;
   --color-5: #005244;
 
