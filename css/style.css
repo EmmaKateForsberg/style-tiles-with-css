@@ -15,13 +15,13 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #462c6e;
+  --link-color: #bd95ff;
+  --link-hover-color: #66baa8;
+  --color-4: #8b9199;
+  --color-5: #005244;
 
-  --primary-font: "Open Sans", sans-serif;
+  --primary-font: "immortal", sans-serif;
   --secondary-font: "Droid Serif", serif;
   --main-text-color: #000;
 
@@ -67,7 +67,7 @@ footer {
 
 .full-width {
   background: var(--bg-color);
-  color: white;
+  color: 544343;
   width: 100%;
 }
 
@@ -153,19 +153,15 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/purplewave.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/leafscales.jpg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/goldenlight.jpg) top left repeat;
 }
 
 .images ul {
