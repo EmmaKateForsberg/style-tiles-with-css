@@ -1,20 +1,22 @@
-/* change these */
-
 @font-face {
   font-family: immortal;
-  src: url(/fonts/immortal);
+  src: url(../fonts/immortal/immortal.ttf);
 }
 @font-face {
   font-family: montserrat;
-  src: url(/fonts/montserrat);
+  src: url(../fonts/montserrat/montserrat.ttf);
 }
 
 @font-face {
   font-family: exo;
-  src: url(/fonts/exo/);
+  src: url(../fonts/exo/exo.ttf);
 }
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: #121137;
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
@@ -23,15 +25,19 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #462c6e;
-  --link-color: #8574a3;
-  --link-hover-color: #c2a72f;
-  --color-4: #8b9199;
-  --color-5: #005244;
+  --color-1: #6a68cc;
+  --color-2: #4d467b;
+  --color-3: #1f2069;
+  --color-4: #512a4a;
+  --color-5: #74a4a2;
+  --bg-color: #121137;
+  --link-hover-color: #512a4a;
+  --link-color: #6a68cc;
 
   --primary-font: "immortal", sans-serif;
   --secondary-font: "montserrat", serif;
-  --main-text-color: #000;
+  --teriary-font: "exo", serif;
+  --main-text-color: white;
 
   --white-space: 1rem;
 }
@@ -44,7 +50,7 @@ a {
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(3) (40deg);
 }
 
 button:active {
@@ -53,8 +59,9 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
+
 html {
   font-size: 100%;
   font-family: var(--primary-font);
@@ -74,7 +81,7 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: #121137;
   color: 544343;
   width: 100%;
 }
@@ -113,9 +120,8 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
-  color: #777;
+  color: grey;
   margin: 0.5rem 0;
 }
 
@@ -135,15 +141,15 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--color-1);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--color-2);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-3);
 }
 
 .color-swatch-4 {
@@ -161,15 +167,15 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/purplewave.jpg) top left repeat;
+  background: url(../img/galaxy.png) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/leafscales.jpg) top left repeat;
+  background: url(../img/electric-crystal.png) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/goldenlight.jpg) top left repeat;
+  background: url(../img/snow-crystals.png) top left repeat;
 }
 
 .images ul {
@@ -194,20 +200,18 @@ button {
   color: white;
   text-transform: uppercase;
   text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
+  transition: all 0.7s ease-in-out;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 3rem 2rem 2rem 0;
 }
 
 .secondary-button {
   background: var(--color-5);
 }
 
-button:focus,
-button:active,
-button:focus-within {
-  outline: 0;
-  border-radius: 4px;
+.view-tenth:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 .typography-main {
@@ -220,8 +224,7 @@ button:focus-within {
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
+  font-family: var(--teriary-font);
   font-size: 1.25rem;
 }
 
@@ -240,7 +243,7 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
+  font-family: var(--teriary-font);
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
@@ -252,7 +255,7 @@ p[class*="font-details-"] {
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
   font-family: var(--secondary-font);
-  color: #6f6f6f;
+  color: #4d467b;
 }
 
 .adjectives ul {
